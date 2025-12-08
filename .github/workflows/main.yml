@@ -16,7 +16,7 @@ jobs:
       - name: Install Graphviz
         run: sudo apt install -y graphviz
       - name: Checkout repository
-        uses: actions/checkout@v6.0.0
+        uses: actions/checkout@v6.0.1
       - name: Convert files
         run: |
           for input_file in $(find . -name '*.dot' -print); do
